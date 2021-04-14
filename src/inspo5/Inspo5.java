@@ -71,7 +71,7 @@ public class Inspo5 extends Application {
 
         for (final File file : listOfFiles) {
                 ImageView imageView;
-                imageView = createImageView(file);
+                imageView = mediaTile(file);
                 tile.getChildren().addAll(imageView);
         }
 
@@ -93,7 +93,7 @@ public class Inspo5 extends Application {
 
     }
 
-    private ImageView createImageView(final File imageFile) {
+    private ImageView mediaTile(final File imageFile) {
 
         ImageView imageView = null;
         try {
